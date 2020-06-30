@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  /* background-color: beige; */
+
+}
+
+#StoryAbout{
+  /* transform: translateY(100%); */
+  /* position: absolute;
+  margin-bottom: 0;
+  right:0;
+  bottom: 0px; */
+  font-weight: normal;
+  text-align: right;
+}
+
+#allStory{
+  margin-bottom: 20px;
+  /* background-color: rgb(216, 214, 214); */
+}
+
+#title{
+transform: translateY(30%);
+  font-family: fantasy;
+  letter-spacing: 2px;
+}
+
+.butt{
+  transform: translateY(30%);
+  /* font-family: auto; */
+  font-family: serif Georgia, 'Times New Roman', Times, serif;
+}
+#img{
+  transition: 0.3s;
+}
+#img:hover {
+  opacity: 0.7;
+  color: black;
+}
+
+#navbar{
+  opacity: 0.9;
+}
+#aboveNavbar{
+  /* height: 180px; */
+  background-color: black;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.storyImg{
+width: 150px;
+height: 150px;
+}
+
+.logo{
+  color: white;
+  transform: translateY(550%);
+  width: auto;
+  text-align: left;
+  margin-left: 20px;
+  font-family: fantasy;
+  letter-spacing: 5px;
+ 
+}
+
+.title{
+  font-size: 40px;
+  color:black;
+}
+
+#carouselImages{
+  -webkit-filter: brightness(30%);
+    filter:brightness(30%);
+}
+
+.btn{
+  
+}
+
+
+
+
