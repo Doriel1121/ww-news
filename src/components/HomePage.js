@@ -57,7 +57,7 @@ this.setState({currentDate:today})
     }
 
     BitcoinStories= () => {
-        Axios.get(`http://newsapi.org/v2/everything?q=bitcoin&from=${this.state.currentDate}&sortBy=publishedAt&apiKey=${this.state.APIkey}`)
+        Axios.get(`https://newsapi.org/v2/everything?q=bitcoin&from=${this.state.currentDate}&sortBy=publishedAt&apiKey=${this.state.APIkey}`)
         .then((res)=>{
             this.setState({Data:res.data.articles , BitcoinStories:res.data.articles})
             console.log(res);
@@ -68,7 +68,7 @@ this.setState({currentDate:today})
     }
 
     BusinessStories = () => {
-        Axios.get(`http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${this.state.APIkey}`)
+        Axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${this.state.APIkey}`)
         .then((res)=>{
             this.setState({Data:res.data.articles, BusinessStories:res.data.articles})
             console.log(res);
@@ -81,7 +81,7 @@ this.setState({currentDate:today})
     }
 
     ApplesStories = () => {
-        Axios.get(`http://newsapi.org/v2/everything?q=apple&from=${this.state.currentDate}&to=${this.state.currentDate}&sortBy=popularity&apiKey=${this.state.APIkey}`)
+        Axios.get(`https://newsapi.org/v2/everything?q=apple&from=${this.state.currentDate}&to=${this.state.currentDate}&sortBy=popularity&apiKey=${this.state.APIkey}`)
         .then((res)=>{
             this.setState({Data:res.data.articles, ApplesStories:res.data.articles})
         }).catch((err)=>{
@@ -92,7 +92,7 @@ this.setState({currentDate:today})
     }
 
     TechCrunchStories= () => {
-        Axios.get(`http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${this.state.APIkey}`)
+        Axios.get(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${this.state.APIkey}`)
         .then((res)=>{
             this.setState({Data:res.data.articles, TechCrunchStories:res.data.articles})
         }).catch((err)=>{
@@ -101,7 +101,7 @@ this.setState({currentDate:today})
     }
 
     WallStreetStories= () => {
-        Axios.get(`http://newsapi.org/v2/everything?domains=wsj.com&apiKey=${this.state.APIkey}`)
+        Axios.get(`https://newsapi.org/v2/everything?domains=wsj.com&apiKey=${this.state.APIkey}`)
         .then((res)=>{
             this.setState({Data:res.data.articles, WallStreetStories:res.data.articles})
             console.log(this.state.AllStories);
@@ -173,17 +173,17 @@ this.setState({currentDate:today})
     </li>
     <li className="list-inline-item">
       <a className="btn-floating btn-tw mx-1">
-        <i className="fab fa-twitter"> </i>
+        <i className="fa fa-twitter"> </i>
       </a>
     </li>
     <li className="list-inline-item">
       <a className="btn-floating btn-gplus mx-1">
-        <i className="fab fa-google-plus-g"> </i>
+        <i className="fa fa-google-plus-g"> </i>
       </a>
     </li>
     <li className="list-inline-item">
       <a className="btn-floating btn-li mx-1">
-        <i className="fab fa-linkedin-in"> </i>
+        <i className="fa fa-linkedin-in"> </i>
       </a>
     </li>
     <li className="list-inline-item">
