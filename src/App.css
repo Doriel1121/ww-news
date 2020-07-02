@@ -26,7 +26,7 @@ transform: translateY(30%);
 }
 
 .butt{
-  transform: translateY(30%);
+  transform: translateY(50%);
   /* font-family: auto; */
   font-family: serif Georgia, 'Times New Roman', Times, serif;
 }
@@ -77,8 +77,8 @@ height: 150px;
     filter:brightness(30%);
 }
 
-.btn{
-  
+.mt-3 .my-3{
+  margin-top: 0px;
 }
 
 

@@ -3,10 +3,6 @@ import Axios from "axios";
 import Story from './Story';
 import Carousel from 'react-bootstrap/Carousel';
 import '../App.css';
-import {useSelector} from 'react-redux';
-
-
-
 
 export default class HomePage extends Component {
     constructor(props) {
@@ -14,7 +10,6 @@ export default class HomePage extends Component {
     
         this.state = {
              APIkey : "56e5c7bb3749419b8eb54212d6bf370a",
-            //  Data : [{name : "asdsa" , num : 2321}, {name: " asdsadd" , num : 56745}],
              Data : [],
              AllStories:[],
              BitcoinStories:[],
@@ -27,7 +22,6 @@ export default class HomePage extends Component {
     }
     
     componentDidMount = () => {
-        // console.log(isOdd(7))
         var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); 
@@ -60,9 +54,6 @@ this.setState({currentDate:today})
         this.state.WallStreetStories
     ]
     console.log(allStories);
-    
-    // this.setState({Data:allStories})
-
     }
 
     BitcoinStories= () => {
@@ -138,19 +129,14 @@ this.setState({currentDate:today})
  
 
                </Carousel>  
-
-                <div id="aboveNavbar">
-                    {/* <p className="logo">WW NEWS</p> */}
-                </div>
                     <div  style={{backgroundColor: "#102039", color:"white", height:80 , marginBottom:30 }} className="sticky-top row">
                     <div className="col-3" ><h1 id="title">WW NEWS</h1></div>
-                    <div className="col-3"></div>
-                        {/* <div className="col-sm butt"><button onClick={()=> this.ShowAllStories()} className="btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>All</button></div> */}
-                        <div className="col-1 butt"><button onClick={()=> this.BitcoinStories()} className="btn btn-link " style={{color:"white" , fontWeight:"bolder"}}>Bitcoin</button></div>
-                        <div className="col-1 butt"><button onClick={()=> this.BusinessStories()} className="btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Businesses</button></div>
-                        <div className="col-1 butt"><button onClick={()=> this.ApplesStories()} className="btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Apple</button></div>
-                        <div className="col-1 butt"><button onClick={()=> this.TechCrunchStories()} className="btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>TechCrunch </button></div>
-                        <div className="col-2 butt"><button onClick={()=> this.WallStreetStories()} className="btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Wall Street Journal</button></div>                        
+                    {/* <div className="col-"></div> */}
+                        <div className="col-1 "><button onClick={()=> this.BitcoinStories()} className="butt btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Bitcoin</button></div>
+                        <div className="col-2 "><button onClick={()=> this.BusinessStories()} className="butt btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Businesses</button></div>
+                        <div className="col-1 "><button onClick={()=> this.ApplesStories()} className="butt btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Apple</button></div>
+                        <div className="col-2 "><button onClick={()=> this.TechCrunchStories()} className="butt btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>TechCrunch </button></div>
+                        <div className="col-2 "><button onClick={()=> this.WallStreetStories()} className="butt btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Wall Street Journal</button></div>
                     </div>
                 </div>
                 <div className="container">
