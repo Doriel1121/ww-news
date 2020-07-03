@@ -31,7 +31,7 @@ today = yyyy + '/' + mm + '/' + dd;
 console.log(today)
 this.setState({currentDate:today})
         
-        Axios.get(`https://newsapi.org/v2/everything?q=bitcoin&from=${this.state.currentDate}&sortBy=publishedAt&apiKey=${this.state.APIkey}`)
+        Axios.get(`https://newsapi.org/v2/everything?q=bitcoin&from=${today}&sortBy=publishedAt&apiKey=${this.state.APIkey}`)
         .then((res)=>{
             this.setState({Data:res.data.articles})
             console.log(res);
