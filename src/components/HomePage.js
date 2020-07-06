@@ -140,7 +140,7 @@ this.setState({currentDate:today})
                         <div className="col-2 "><button onClick={()=> this.WallStreetStories()} className="butt btn btn-link" style={{color:"white" , fontWeight:"bolder"}}>Wall Street Journal</button></div>
                     </div>
                 </div>
-                {/* <div className="container"> */}
+                <div className="container">
                 <div  className="row no-gutters">
                     <div  className="col-3">
                 {this.state.Data.map((element) => {
@@ -161,7 +161,7 @@ this.setState({currentDate:today})
                 </div>
 
                 </div>  
-                {/* </div> */}
+                </div>
                 <footer className="page-footer font-small special-color-dark pt-4">
 
 <div className="container">
